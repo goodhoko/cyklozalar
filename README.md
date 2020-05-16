@@ -55,10 +55,37 @@ Here's a diagram
 You could complain that I'll be locked in with Netlify and you'd be right. However I'm ok with that. All I need is part of the free tier and I do not expect to exceed its limits any time soon. Also as already mentioned the site will be completely contained in the git repository so moving it out of netlify to a more customized hosting solution should be quite easy. Furthermore my learning objectives with this project are in the Sapper and Svelte as that will be my first ever experience with any real front end framework.
 
 ## RoadMap
-- [ ] First create a super basic Sapper app merely rendering front page.
+- [x] First create a super basic Sapper app merely rendering front page.
 - [ ] Explore how Sapper static content generation works, especially how it handles markdown content sourcing.
 - [ ] Add Netlify CMS to manage the markdown content.
 - [ ] Deploy to netlify.
 - [ ] Create a proper design and structure.
 - [ ] Extend the site with post pages.
 - [ ] Go public.
+
+
+## Setting up Sapper
+After researching various bootstrapping repos I went with the [official Sapper template](https://github.com/sveltejs/sapper-template) mainly because everything in this world seems outdated already when it comes out. And since this is the official template it has the higher chances to work with the latest Sapper.
+
+Anyway after degitting it and installing deps. Launching it is easy. `npm run dev` and it works, including live reloading which feels like magic when you see it for the first time in your live.
+Not everything is that beatiful. First [I noticed](https://stackoverflow.com/questions/61843696/why-sapper-omits-clossing-html-tags) that the html generated with `npm run export` is missing the closing `body` and `html` tags. Weird.
+Right after that, without changing any fo the files, the live reloading suddenly does not work. o.O I guess it still counts as magic then.
+
+Another thing that bothers me is that Sapper is supposed to render a static html. However the template includes `server.js` which spins up a polka server. Further the official docs mention several times the server. This makes me a bit nervous since I plan to deploy this to a static file server.
+
+Aha! Worry not, this is actually nicely explained in the [Exporting section](https://sapper.svelte.dev/docs#Exporting) of the docs. I'll just need to make sure all my pages can be reached by crawling from the index page. Should be easy.
+
+The docs states that
+> When not to export
+>
+> The basic rule is this: for an app to be exportable, any two users hitting the same page of your app must get the same content from the server. In other words, any app that involves user sessions or authentication is not a candidate for sapper export.
+
+I will have authenticated users but the content will be handled by the Netlify Identity thingy so that's ok.
+
+## First deploy
+That was an easy pie actually. Just committed, pushed, started new site on Netlify and [it's up](https://cyklozalar.netlify.app/).
+
+## Resources
+- https://github.com/sveltejs/sapper-template
+- https://github.com/mrispoli24/sapper-netlify-jamstack-starter
+- https://spiffy.tech/blog/setting-up-sapper-with-netlify-cms/
