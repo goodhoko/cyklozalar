@@ -55,4 +55,10 @@ Here's a diagram
 You could complain that I'll be locked in with Netlify and you'd be right. However I'm ok with that. All I need is part of the free tier and I do not expect to exceed its limits any time soon. Also as already mentioned the site will be completely contained in the git repository so moving it out of netlify to a more customized hosting solution should be quite easy. Furthermore my learning objectives with this project are in the Sapper and Svelte as that will be my first ever experience with any real front end framework.
 
 ## RoadMap
-TODO
+- [ ] First create a super basic Sapper app merely rendering front page.
+- [ ] Explore how Sapper static content generation works, especially how it handles markdown content sourcing.
+- [ ] Add Netlify CMS to manage the markdown content.
+- [ ] Deploy to netlify.
+- [ ] Create a proper design and structure.
+- [ ] Extend the site with post pages.
+- [ ] Go public.
