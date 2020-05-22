@@ -85,6 +85,9 @@ I will have authenticated users but the content will be handled by the Netlify I
 ## First deploy
 That was an easy pie actually. Just committed, pushed, started new site on Netlify and [it's up](https://cyklozalar.netlify.app/).
 
+## TODO fot later
+- setup LFS on Netlify
+
 ## Resources
 - https://github.com/sveltejs/sapper-template
 - https://github.com/mrispoli24/sapper-netlify-jamstack-starter
