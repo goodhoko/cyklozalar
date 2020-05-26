@@ -55,3 +55,30 @@
 </svelte:head>
 
 <h1>Žalář ⫵⫵⫵</h1>
+<p>Nezávislá cyklodílna obnovená ze zbytků a přeživších bývalé Vinohradské dílny T9.</p>
+<p>Z Vinohradů jsme se přesunuli do Karlínských močálů, ale kola děláme furt stejná. Naším řemeslem jsou zakázkové stavby fixedgear, singlespeed a silniční bicyklů. V mezičase organizujeme vyjížďky s jiné sněmy Pražské cyklo komunity.</p>
+
+<h2>Pikající</h2>
+<div class="heads">
+	<div>
+		<h3>Honza</h3>
+		<img src="/heads/honza.jpg" alt="Portrét Honzy">
+		<a href="mailto:jen@zalar.cc">jen@zalar.cc</a>
+	</div>
+	<div>
+		<h3>Matouš</h3>
+		<img src="/heads/matous.jpg" alt="Portrét Matouše">
+		<a href="mailto:jen@zalar.cc">matous@zalar.cc</a>
+	</div>
+	<div>
+		<h3>Šimon</h3>
+		<img src="/heads/simon.jpg" alt="Portrét Šimona">
+		<a href="mailto:jen@zalar.cc">simon@zalar.cc</a>
+	</div>
+</div>
+
+<h2>Projekty</h2>
+<div class="projects-sample">
+
+	<a href="/projekty">všechny projekty</a>
+</div>
