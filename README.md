@@ -85,6 +85,12 @@ I will have authenticated users but the content will be handled by the Netlify I
 ## First deploy
 That was an easy pie actually. Just committed, pushed, started new site on Netlify and [it's up](https://cyklozalar.netlify.app/).
 
+## Exploring Svelte
+Going thru the official tutorial is very nice. Already found [a bug](https://github.com/sveltejs/svelte/issues/4895).
+Current progress: https://svelte.dev/tutorial/group-inputs
+
+
+
 ## TODO fot later
 - setup LFS on Netlify
 
