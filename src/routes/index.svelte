@@ -22,6 +22,7 @@
 
 	h1 {
 		font-size: 2.8em;
+		font-family: 'Jim Nightshade', cursive;
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
@@ -49,15 +50,8 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Žalář ⫵⫵⫵ Cyklodílna</title>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<h1>Žalář ⫵⫵⫵</h1>
