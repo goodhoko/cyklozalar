@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import Head from '../components/Head.svelte'
 
   onMount(() => {
     if (window.netlifyIdentity) {
@@ -38,33 +39,9 @@
 		flex-wrap: wrap;
 	}
 
-	.heads > div {
-		width: 33%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.heads img {
-		border-radius: 50%;
-		width: 50%;
-	}
-
-	.heads .name {
-		font-family: 'Jim Nightshade', cursive;
-		text-align: center;
-		display: block;
-	}
-
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
-		}
-	}
-
-	@media (max-width: 800px) {
-		.heads > div {
-			width: 50%;
 		}
 	}
 </style>
@@ -82,21 +59,9 @@
 
 <section>
 	<div class="heads">
-		<div>
-			<span class="name">Jen</span>
-			<img src="/images/jen.jpg" alt="Portrét Jena">
-			<a href="mailto:jen@zalar.cc">jen@zalar.cc</a>
-		</div>
-		<div>
-			<span class="name">Matouš</span>
-			<img src="/images/matous.jpg" alt="Portrét Matouše">
-			<a href="mailto:jen@zalar.cc">matous@zalar.cc</a>
-		</div>
-		<div>
-			<span class="name">Šimon</span>
-			<img src="/images/simon.jpg" alt="Portrét Šimona">
-			<a href="mailto:jen@zalar.cc">simon@zalar.cc</a>
-		</div>
+		<Head name='Jen' nameSlug='jen'/>
+		<Head name='Matouš' nameSlug='matous'/>
+		<Head name='Šimon' nameSlug='simon'/>
 	</div>
 </section>
 
